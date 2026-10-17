@@ -1,135 +1,187 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<title>Alioune CISSE Profile</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-a{text-decoration: none;}
-h3 a {font-weight: bold;}
-</style>
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHPZN4WTHK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.projects">Projets — Alioune Cissé</title>
+  <meta name="description" content="Projets de data science, machine learning, NLP et data engineering d'Alioune Cissé.">
+  <meta name="theme-color" content="#f6f7f9">
+  <script>
+    (function () {
+      var t = null; try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHPZN4WTHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WHPZN4WTHK');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
 
-  gtag('config', 'G-WHPZN4WTHK');
-</script>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner >
-  <img src="me/mask2.jpg" style="width:100%" alt="My_Image"-->
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>Accueil</p>
-  </a>
-  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>A propos</p>
-  </a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-folder-open w3-xxlarge"></i>
-    <p>Portfolio</p>
-  </a>
-  <a href="blogs.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-book w3-xxlarge"></i>
-    <p>Blogs</p>
-  </a>
-  <a href="https://drive.google.com/file/d/1UG8kRBSaajOBaK-SI691YbQ-EZVnnXZv/view?usp=sharing" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-file w3-xxlarge"></i>
-    <p>CV / Resume</p>
-  </a>
-  <a href="index.html#contactme" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>Contact</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="index.html#" class="w3-bar-item w3-button" style="width:17.5% !important">Accueil</a>
-    <a href="index.html#about" class="w3-bar-item w3-button" style="width:19% !important">Apropos</a>
-    <a href="#" class="w3-bar-item w3-button" style="width:18.5% !important">Portfolio</a>
-    <a href="blogs.html" class="w3-bar-item w3-button" style="width:15% !important">Blogs</a>
-    <a href="https://drive.google.com/file/d/1UG8kRBSaajOBaK-SI691YbQ-EZVnnXZv/view?usp=sharing" class="w3-bar-item w3-button" style="width:9.5% !important">CV</a>
-    <a href="index.html#contactme" class="w3-bar-item w3-button" style="width:18% !important">Contact</a>
-  </div>
-</div>
-
-<section class="w3-content w3-justify w3-text-grey w3-padding-64" id="competences">
-
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://ecowas-malaria.github.io/"><img src="me/logoweb.png" alt="Web" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://ecowas-malaria.github.io/">Paludisme CEDEAO</a></h3>
-            <p>Visualisation du Paludisme dans l'espace CEDEAO avec des données réelles fournies par les nations unies. Le projet couvre la période de 2000 à 2017 et les visualisations ont été faites avec D3.js. (Attention disponible uniquement en version web: les visualisations ne s'affichent pas bien en petit écran).</p>
-        </div>  
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Alioune Cissé">
+        <span class="brand-mark" aria-hidden="true">AC</span>
+        <span class="brand-name">Alioune Cissé</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.main">
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Accueil</a>
+          <a href="portfolio.html" aria-current="page" data-i18n="nav.projects">Projets</a>
+          <a href="cv.html" data-i18n="nav.cv">CV</a>
+          <a href="blogs.html" data-i18n="nav.blog">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="seg" role="group" aria-label="Langue" data-i18n-attr="aria-label:ui.lang">
+          <button type="button" data-lang="fr" aria-pressed="true" lang="fr">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+        </div>
+        <button type="button" class="btn-icon theme-toggle" aria-label="Basculer entre thème clair et sombre" data-i18n-attr="aria-label:ui.theme"></button>
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu" data-i18n-attr="aria-label:nav.menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"></svg></button>
+      </nav>
     </div>
-
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://github.com/Alioune-Cisse/api-meteo-senegal"><img src="me/github.png" alt="Github" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://github.com/Alioune-Cisse/api-meteo-senegal">API Météo Sénégal</a></h3>
-            <p>API de collecte de données météorologiques des départements du Sénégal. Les données peuvent être historiques, à temps réel ou même prévisionnelles.</p>
-        </div>  
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="portfolio.html" aria-current="page" data-i18n="nav.projects">Projets</a>
+      <a href="cv.html" data-i18n="nav.cv">CV</a>
+      <a href="blogs.html" data-i18n="nav.blog">Blog</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
     </div>
+  </header>
 
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://youtu.be/dHzBLipXeIM?si=JpmkIjwY3BDfMAaY"><img src="me/ytb.png" alt="Github" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://youtu.be/dHzBLipXeIM?si=JpmkIjwY3BDfMAaY">Prédiction des innondations à Dakar</a></h3>
-            <p>Il s'agit d'une plateforme de prédiction des inondations développée grâce à des modèles de Deep Learning. Le modèle se base sur les données historiques, les données météorologiques et les images satellitaires de Google pour faire ses prédictions. Le travail est toujours en cours et donc les ressources ne sont pas encore accessibles au grand public. Vous trouverez un démo du projet en visionnat la vidéo youtube. Le travail a été réalisé en collaboration avec des amis que sont : Ndeye Penda DIAGNE, Almamy Youssef LY, Ousmane DIA et Abdoulaye Bara DIAW.</p>
-        </div>  
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <p class="eyebrow" data-i18n="nav.projects">Projets</p>
+        <h1 data-i18n="proj.h1">Projets</h1>
+        <p class="lead" data-i18n="proj.lead">Une sélection de travaux en data science, data engineering et visualisation. La plupart du code est sur GitHub.</p>
+      </div>
+      <section class="section" style="padding-top:var(--s6)" aria-label="Projets">
+        <div class="filters" role="group" aria-label="Filtres">
+          <button type="button" data-filter="all" aria-pressed="false"><span data-i18n="f.all">Tous</span><span class="count"></span></button>
+          <button type="button" data-filter="nlp" aria-pressed="false"><span data-i18n="f.nlp">NLP</span><span class="count"></span></button>
+          <button type="button" data-filter="ml" aria-pressed="false"><span data-i18n="f.ml">ML &amp; Deep Learning</span><span class="count"></span></button>
+          <button type="button" data-filter="viz" aria-pressed="false"><span data-i18n="f.viz">Data viz</span><span class="count"></span></button>
+          <button type="button" data-filter="eng" aria-pressed="false"><span data-i18n="f.eng">Data engineering</span><span class="count"></span></button>
+          <button type="button" data-filter="web" aria-pressed="false"><span data-i18n="f.web">Web &amp; API</span><span class="count"></span></button>
+        </div>
+        <p class="result-note" id="result-note" aria-live="polite"><span>0</span> <span data-i18n="proj.count">projets affichés</span></p>
+        <div class="grid grid-3">
+        <article class="card project" data-cat="nlp ml">
+          <div class="project-top"><span class="chip chip-accent">NLP</span></div>
+          <h3 data-i18n="p.wolof.t">Génération de texte en wolof</h3>
+          <p data-i18n="p.wolof.d">Pipeline NLP complet : scraping de textes wolof, prétraitement, puis modèles LSTM et Transformer sous PyTorch, servis via une interface web Flask.</p>
+          <div class="demo-box" id="demo-wolof" hidden><img data-src="me/wolof.gif" alt="" loading="lazy"></div>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">Transformer</span><span class="chip">LSTM</span><span class="chip">Flask</span></div>
+          <div class="project-links"><button type="button" class="btn btn-sm" data-demo="demo-wolof" aria-expanded="false" aria-controls="demo-wolof" data-icon="play"><span data-i18n="proj.demo">Voir la démo</span></button><a class="btn btn-sm" href="https://github.com/Alioune-Cisse/pytorch-wolof-text-generator" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+        </article>
+        <article class="card project" data-cat="ml">
+          <div class="project-top"><span class="chip chip-amber">ML</span></div>
+          <h3 data-i18n="p.flood.t">Prédiction des inondations à Dakar</h3>
+          <p data-i18n="p.flood.d">Prédiction des inondations de Dakar à partir de données météo, de l'historique extrait des images satellites Sentinel-1 et d'un RandomForest, déployé avec Flask. Projet en cours avec d'anciens camarades.</p>
+          
+          <div class="chips"><span class="chip">Python</span><span class="chip">RandomForest</span><span class="chip">Sentinel-1</span><span class="chip">Flask</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://youtu.be/dHzBLipXeIM" target="_blank" rel="noopener" data-icon="play"><span data-i18n="proj.video">Démo vidéo</span></a></div>
+        </article>
+        <article class="card project" data-cat="viz">
+          <div class="project-top"><span class="chip chip-teal">Data viz</span></div>
+          <h3 data-i18n="p.malaria.t">Paludisme en CEDEAO, 2000–2017</h3>
+          <p data-i18n="p.malaria.d">Visualisations interactives D3.js sur des données réelles des Nations unies couvrant l'espace CEDEAO pendant 17 ans. À consulter sur ordinateur.</p>
+          <div class="demo-box" id="demo-malaria" hidden><img data-src="me/malaria.gif" alt="" loading="lazy"></div>
+          <div class="chips"><span class="chip">D3.js</span><span class="chip">JavaScript</span></div>
+          <div class="project-links"><button type="button" class="btn btn-sm" data-demo="demo-malaria" aria-expanded="false" aria-controls="demo-malaria" data-icon="play"><span data-i18n="proj.demo">Voir la démo</span></button><a class="btn btn-sm" href="https://ecowas-malaria.github.io" target="_blank" rel="noopener" data-icon="external"><span data-i18n="proj.live">Site en ligne</span></a></div>
+        </article>
+        <article class="card project" data-cat="eng">
+          <div class="project-top"><span class="chip chip-teal">Data engineering</span></div>
+          <h3 data-i18n="p.telecom.t">Architecture big data télécom</h3>
+          <p data-i18n="p.telecom.d">Architecture big data pour la collecte et le traitement quotidiens des données d'une entreprise télécom, conçue avec des camarades pendant la formation Ecofarm Data Engineering.</p>
+          
+          <div class="chips"><span class="chip">Big Data</span><span class="chip">Architecture</span><span class="chip">Ecofarm</span></div>
+          <div class="project-links"></div>
+        </article>
+        <article class="card project" data-cat="eng web">
+          <div class="project-top"><span class="chip chip-teal">Data engineering</span></div>
+          <h3 data-i18n="p.meteo.t">API Météo Sénégal</h3>
+          <p data-i18n="p.meteo.d">API de collecte de données météorologiques des départements du Sénégal : historiques, temps réel et prévisions.</p>
+          
+          <div class="chips"><span class="chip">Python</span><span class="chip">API</span><span class="chip">Open data</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://github.com/Alioune-Cisse/api-meteo-senegal" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+        </article>
+        <article class="card project" data-cat="web eng">
+          <div class="project-top"><span class="chip chip-accent">Web & API</span></div>
+          <h3 data-i18n="p.public.t">Annuaire d'APIs publiques</h3>
+          <p data-i18n="p.public.d">Plateforme web Flask qui regroupe et catégorise plus de 1 500 APIs publiques pour faciliter la recherche.</p>
+          
+          <div class="chips"><span class="chip">Flask</span><span class="chip">Python</span><span class="chip">API</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://github.com/Alioune-Cisse/public-api" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+        </article>
+        <article class="card project" data-cat="web">
+          <div class="project-top"><span class="chip chip-accent">Web & API</span></div>
+          <h3 data-i18n="p.search.t">Moteur de recherche en Python</h3>
+          <p data-i18n="p.search.d">Un moteur de recherche construit avec Python.</p>
+          
+          <div class="chips"><span class="chip">Python</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://github.com/Alioune-Cisse/Search-Engine" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+        </article>
+        <article class="card project" data-cat="eng">
+          <div class="project-top"><span class="chip chip-teal">Data engineering</span></div>
+          <h3 data-i18n="p.pas.t">P.A.S Challenge : collecte de données</h3>
+          <p data-i18n="p.pas.d">Membre de l'équipe de collecte de données du hackathon P.A.S à Dakar (25 octobre – 1er décembre 2022), un challenge pour repérer de jeunes talents data.</p>
+          
+          <div class="chips"><span class="chip">Collecte de données</span><span class="chip">Hackathon</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://www.ias.sn/pas" target="_blank" rel="noopener" data-icon="external"><span data-i18n="proj.live">Site en ligne</span></a></div>
+        </article>
+        <article class="card project" data-cat="web viz">
+          <div class="project-top"><span class="chip chip-accent">Web & API</span></div>
+          <h3 data-i18n="p.scala.t">Gestion administrative en Scala</h3>
+          <p data-i18n="p.scala.d">Plateforme d'attribution automatique des salles selon les emplois du temps et les disponibilités, qui gère aussi notes, matières et professeurs, avec un module de visualisation.</p>
+          <div class="demo-box" id="demo-scala" hidden><img data-src="me/scala.gif" alt="" loading="lazy"></div>
+          <div class="chips"><span class="chip">Scala</span><span class="chip">Data viz</span></div>
+          <div class="project-links"><button type="button" class="btn btn-sm" data-demo="demo-scala" aria-expanded="false" aria-controls="demo-scala" data-icon="play"><span data-i18n="proj.demo">Voir la démo</span></button><a class="btn btn-sm" href="https://github.com/Alioune-Cisse/scala_uvs_jar" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+        </article>
+        <article class="card project" data-cat="ml">
+          <div class="project-top"><span class="chip chip-amber">ML</span></div>
+          <h3 data-i18n="p.ml.t">Notebooks de machine learning</h3>
+          <p data-i18n="p.ml.d">Une collection de travaux de machine learning : classification, régression et analyses exploratoires.</p>
+          
+          <div class="chips"><span class="chip">scikit-learn</span><span class="chip">Notebooks</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://drive.google.com/drive/folders/1VpbJmyui8VDgubk70tpUgmXndG5Qocus?usp=sharing" target="_blank" rel="noopener" data-icon="external"><span data-i18n="proj.more">Plus</span></a></div>
+        </article>
+        <article class="card project" data-cat="ml">
+          <div class="project-top"><span class="chip chip-amber">ML</span></div>
+          <h3 data-i18n="p.dl.t">Dépôts de deep learning</h3>
+          <p data-i18n="p.dl.d">Expériences et modèles de deep learning disponibles sur mon profil GitHub.</p>
+          
+          <div class="chips"><span class="chip">Deep Learning</span></div>
+          <div class="project-links"><a class="btn btn-sm" href="https://github.com/Alioune-Cisse" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+        </article>
+        </div>
+      </section>
     </div>
+  </main>
 
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://github.com/Alioune-Cisse/scala_uvs_jar"><img src="me/github.png" alt="Github" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://github.com/Alioune-Cisse/scala_uvs_jar">Gestion administrative d'un établissement</a></h3>
-            <p>C'est une plateforme d'attribution automatique des salles de classe en fonction des emplois du temps et disponibilités des salles. Elle gère également les notes, les informations sur les matières, sur les professeurs, etc. Une partie est consacrée à la visualisation de données également.</p>
-        </div>  
+  <footer class="site-footer">
+    <div class="wrap">
+      <span data-i18n="footer.copy">© 2026 Alioune Cissé. Fait main : HTML, CSS, JS natif.</span>
+      <span class="socials">
+        <a class="btn-icon" href="https://github.com/Alioune-Cisse/" target="_blank" rel="noopener" aria-label="GitHub" data-icon="github"></a>
+        <a class="btn-icon" href="https://www.linkedin.com/in/alioune-cisse-a811a416b/" target="_blank" rel="noopener" aria-label="LinkedIn" data-icon="linkedin"></a>
+        <a class="btn-icon" href="mailto:cissealioune.sn@gmail.com" aria-label="Email" data-icon="mail"></a>
+      </span>
     </div>
+  </footer>
 
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://www.ias.sn/pas"><img src="me/logoweb.png" alt="Github" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://www.ias.sn/pas">P.A.S Challenge 1ère édition Data Collection</a></h3>
-            <p>Le P.A.S. est un challenge organisé par de jeunes sénégalais pour permettre à d'autres jeunes du pays de montrer tout leur potentiel dans les métiers de la data. C'est aussi une occasion pour les entreprises de repérer des profils intéressants à recruter.</p>
-        </div>  
-    </div>
-
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://github.com/Alioune-Cisse/public-api"><img src="me/github.png" alt="Github" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://github.com/Alioune-Cisse/public-api">Public API</a></h3>
-            <p>Plateforme de regroupements et de catégorisations de centaines d'APIs publiques. Elle facilite énormément la recherche.</p>
-        </div>  
-    </div>
-
-    <div class="w3-row" id="projet1">
-        <p class="w3-col m3 s2"><a href="https://github.com/Alioune-Cisse/pytorch-wolof-text-generator"><img src="me/github.png" alt="Github" style="width: 70%;"></a></p>
-        <div class="w3-col m9 s10">
-            <h3><a href="https://github.com/Alioune-Cisse/pytorch-wolof-text-generator">Kocc Barma</a></h3>
-            <p>Génération de textes en wolof avec des modèles de deep learning comme LSTM ou Transformer.</p>
-        </div>  
-    </div>
-</section>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

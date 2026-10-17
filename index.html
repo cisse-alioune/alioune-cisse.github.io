@@ -1,222 +1,278 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<title>Alioune CISSE Profile</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-a{text-decoration: none;}
-</style>
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHPZN4WTHK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.home">Alioune Cissé — Data Scientist</title>
+  <meta name="description" content="Portfolio d'Alioune Cissé, data scientist à Montréal : machine learning, NLP, pipelines de données et visualisation.">
+  <meta name="theme-color" content="#f6f7f9">
+  <script>
+    (function () {
+      var t = null; try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHPZN4WTHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WHPZN4WTHK');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
 
-  gtag('config', 'G-WHPZN4WTHK');
-</script>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner >
-  <img src="me/mask2.jpg" style="width:100%" alt="My_Image"-->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black" >
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>Accueil</p>
-  </a>
-  <a href="#about"  class="w3-bar-item w3-button w3-padding-large w3-hover-black" >
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>A propos</p>
-  </a>
-  <!--a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" >
-    <i class="fa fa-folder-open w3-xxlarge"></i>
-    <p>Portfolio</p>
-</a-->
-  <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-folder-open w3-xxlarge"></i>
-    <p>Portfolio</p>
-  </a>
-  <a href="blogs.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" >
-    <i class="fa fa-book w3-xxlarge"></i>
-    <p>Blogs</p>
-  </a>
-  <a href="https://drive.google.com/file/d/1UG8kRBSaajOBaK-SI691YbQ-EZVnnXZv/view?usp=sharing" class="w3-bar-item w3-button w3-padding-large w3-hover-black" >
-    <i class="fa fa-file w3-xxlarge"></i>
-    <p>CV / Resume</p>
-  </a>
-  <a href="#contactme" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>Contact</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:17.5% !important">Accueil</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:19% !important">Apropos</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button" style="width:18.5% !important">Portfolio</a>
-    <a href="blogs.html" class="w3-bar-item w3-button" style="width:15% !important">Blogs</a>
-    <a href="https://drive.google.com/file/d/1UG8kRBSaajOBaK-SI691YbQ-EZVnnXZv/view?usp=sharing" class="w3-bar-item w3-button" style="width:9.5% !important">CV</a>
-    <a href="#contactme" class="w3-bar-item w3-button" style="width:18% !important">Contact</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><!--span class="w3-hide-small">I'm</span-->Alioune CISSE</h1>
-    <h2>Data scientist</h2>
-    <img src="me/mask2.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Alioune Cissé">
+        <span class="brand-mark" aria-hidden="true">AC</span>
+        <span class="brand-name">Alioune Cissé</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.main">
+        <div class="nav-links">
+          <a href="index.html" aria-current="page" data-i18n="nav.home">Accueil</a>
+          <a href="portfolio.html" data-i18n="nav.projects">Projets</a>
+          <a href="cv.html" data-i18n="nav.cv">CV</a>
+          <a href="blogs.html" data-i18n="nav.blog">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="seg" role="group" aria-label="Langue" data-i18n-attr="aria-label:ui.lang">
+          <button type="button" data-lang="fr" aria-pressed="true" lang="fr">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+        </div>
+        <button type="button" class="btn-icon theme-toggle" aria-label="Basculer entre thème clair et sombre" data-i18n-attr="aria-label:ui.theme"></button>
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu" data-i18n-attr="aria-label:nav.menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"></svg></button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" aria-current="page" data-i18n="nav.home">Accueil</a>
+      <a href="portfolio.html" data-i18n="nav.projects">Projets</a>
+      <a href="cv.html" data-i18n="nav.cv">CV</a>
+      <a href="blogs.html" data-i18n="nav.blog">Blog</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    
-        
-      <!--div class="col-lg-6" style="width: 60%; display: inline-block;"-->
-        <h2 class="w3-text-light-grey">A propos</h2>
-        <hr style="width:200px" class="w3-opacity">
-      <div class="container">
-      <div class="w3-row">
-        <p class="w3-col m3"><img src="me/aliouneeuh.jpeg" alt="mon_image" style="width: 70%;"></p>
-        <p class="w3-col m8">
-          Alioune est titulaire d'un master en science des données et applications à l'université
-          de Thiès, Sénégal (UIDTT) et est étudiant en maîtrise en aérospatiale à l'Ecole de technologie Supérieure de Montréal, Canada (ÉTS). 
-          Passionné de l'informatique et des mathématiques, Alioune s'épanouit dans ce qu'il fait
-          et n'a pas attendu d'avoir des diplômes pour bien maitriser les sciences de données, l'IA et les Big Data
-          qui sont aujourd'hui des domaines indispensables du fait de l'utilisation quotidienne de données massives et variées.
-          <button class="w3-button"><a href="#services"><b>Voir Plus</b></a></button>
-        </p>
-      </div>
-    </div>
-  </section>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Data Scientist</span></p>
+            <h1 data-i18n-html="hero.h1">Je transforme des données brutes en <span class="hl">décisions</span>.</h1>
+            <p class="lead" data-i18n="hero.lead">Data scientist titulaire d'un master en science des données et certifié Databricks Spark. Je construis toute la chaîne : collecte, pipelines, modèles, tableaux de bord et déploiement.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="portfolio.html"><span data-i18n="hero.cta1">Voir mes projets</span><span data-icon="arrow"></span></a>
+              <a class="btn" href="cv.html"><span data-i18n="hero.cta2">Consulter mon CV</span></a>
+            </div>
+            <div class="hero-meta">
+              <span class="chip chip-teal" data-icon="pin"><span data-i18n="hero.loc">Montréal, QC</span></span>
+              <span class="chip chip-amber" data-icon="award"><span data-i18n="hero.cert">Certifié Databricks</span></span>
+              <span class="chip chip-accent"><span data-i18n="hero.status">Ouvert aux opportunités</span></span>
+            </div>
+          </div>
 
-  <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="services">
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Mes Expériences & Parcours</h3>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Académiques</li>
-          <li class="w3-padding-16">2023, Maîtrise en aérospatiale (Montréal, Canada)</li>
-          <li class="w3-padding-16">2021, Master en Data Science (Thiès, Sénégal)</li>
-          <li class="w3-padding-16">2019, Licence en informatique (Thiès, Sénégal)</li>
-          <li class="w3-padding-16">2016, Baccalauréat scientifique (Dakar, Sénégal)</li>
-          <!--li class="w3-padding-16">Prétraitement des données</li>
-          <li class="w3-padding-16">Construction et Ajustement de modèles</li-->
-          <!--li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li-->
-          <li class="w3-light-grey w3-padding-24">
-            <!--button class="w3-button w3-white w3-padding-large w3-hover-black">Académiques</button-->
-          </li>
-        </ul>
-      </div>
+          <figure class="card plot-card" style="margin:0">
+            <div class="plot-bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span data-i18n="plot.file">clusters.py — figure 1</span>
+            </div>
+            <canvas id="plot" role="img" aria-label="Nuage de points formant trois groupes : NLP, data engineering, et ML avec visualisation de données." data-i18n-attr="aria-label:plot.alt"></canvas>
+            <figcaption class="plot-legend">
+              <span><i style="background:var(--accent)"></i><span data-i18n="plot.a">NLP</span></span>
+              <span><i style="background:var(--amber)"></i><span data-i18n="plot.b">Data engineering</span></span>
+              <span><i style="background:var(--teal)"></i><span data-i18n="plot.c">ML &amp; data viz</span></span>
+            </figcaption>
+          </figure>
+        </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Professionnelles</li>
-          <li class="w3-padding-16">2023, Assistant data (Dakar, Sénégal)</li>
-          <li class="w3-padding-16">2022, Data engineer (Fatick, Sénégal)</li>
-          <li class="w3-padding-16">2022, Data scientist (Dakar, Sénégal)</li>
-          <li class="w3-padding-16">2021, Stage en Business Intelligence (Dakar, Sénégal)</li>
-          <!--li class="w3-padding-16">Reconnaissance vocal</li>
-          <li class="w3-padding-16">Annotation vidéo et sous titrage</li-->
-          <!--li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li-->
-          <li class="w3-light-grey w3-padding-24">
-            <!--button class="w3-button w3-white w3-padding-large w3-hover-black">Professionnelles</button-->
-          </li>
-        </ul>
+        <div class="stats reveal">
+          <div class="stat"><b>3+</b><span data-i18n="stat.1">années en rôles data &amp; IA</span></div>
+          <div class="stat"><b>1500+</b><span data-i18n="stat.2">APIs publiques répertoriées</span></div>
+          <div class="stat"><b>17</b><span data-i18n="stat.3">ans de données paludisme visualisées</span></div>
+          <div class="stat"><b>3</b><span data-i18n="stat.4">langues : FR · EN · Wolof</span></div>
+        </div>
       </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
     </section>
-  
-  <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="competences">
-    <h3 class="w3-padding-16 w3-text-light-grey">Mes Compétences</h3>
-    <hr style="width:200px" class="w3-opacity">
-    <p class="w3-wide">Machine Learning</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <img class="portrait" src="me/alioune_profile.png" width="160" height="160" alt="Portrait d'Alioune Cissé" data-i18n-attr="alt:about.alt">
+          <ul class="facts">
+            <li data-icon="pin"><span data-i18n="about.f1">Basé à Montréal, Québec (Canada)</span></li>
+            <li data-icon="award"><span data-i18n="about.f2">Master en science des données, UIDTT (Thiès, Sénégal)</span></li>
+            <li data-icon="award"><span data-i18n="about.f3">Maîtrise recherche, ÉTS Montréal (IA appliquée, mention Excellent)</span></li>
+            <li data-icon="award"><span data-i18n="about.f4">Databricks Certified Associate Developer, Apache Spark 3.0</span></li>
+            <li data-icon="check"><span data-i18n="about.f5">Français, anglais, wolof</span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">À propos</p>
+          <h2 data-i18n="about.h2" style="font-size:clamp(1.6rem,3.2vw,2.1rem)">Curieux de formation, pragmatique par habitude</h2>
+          <p data-i18n="about.p1">Titulaire d'un master en science des données et applications (Université Iba Der Thiam de Thiès), j'ai obtenu une maîtrise recherche à l'ÉTS Montréal (mention Excellent, tableau d'honneur) sur un projet d'IA appliquée mené avec CAE. J'ai ensuite travaillé comme analyste en programmation et IA, après des rôles d'assistant data, de data scientist junior et de stagiaire BI, à Dakar et à Montréal.</p>
+          <p data-i18n="about.p2">J'aime le cycle complet : scraper et collecter les données, les nettoyer, les modéliser (ML classique, deep learning, NLP), puis livrer quelque chose d'utilisable : une API, un tableau de bord, une application web. Je construis aussi des jeux de données pour des langues peu dotées comme le wolof.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">Boîte à outils</p>
+          <h2 data-i18n="skills.h2">Compétences sur toute la chaîne data</h2>
+          <p data-i18n="skills.sub">Regroupées par usage, pas par pourcentage inventé.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.g1">Machine learning &amp; IA</h3>
+            <div class="chips"><span class="chip chip-accent">Machine Learning</span><span class="chip chip-accent">Deep Learning</span><span class="chip chip-accent">NLP</span><span class="chip chip-accent">Computer Vision</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">scikit-learn</span><span class="chip">IA générative</span><span class="chip">Random Forest</span><span class="chip">Transformers</span><span class="chip">LSTM</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.g2">Data engineering</h3>
+            <div class="chips"><span class="chip chip-teal">Apache Spark</span><span class="chip chip-teal">Databricks</span><span class="chip chip-teal">Kafka</span><span class="chip chip-teal">Apache NiFi</span><span class="chip">Hadoop / HDFS</span><span class="chip">Hive</span><span class="chip">Talend</span><span class="chip">ETL</span><span class="chip">Data warehouse</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.g3">Langages &amp; bases de données</h3>
+            <div class="chips"><span class="chip chip-amber">Python</span><span class="chip chip-amber">SQL</span><span class="chip">R</span><span class="chip">Scala</span><span class="chip">JavaScript</span><span class="chip">PostgreSQL</span><span class="chip">NoSQL</span><span class="chip">Neo4j</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.g4">BI, cloud &amp; outils</h3>
+            <div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">D3.js</span><span class="chip">Google BigQuery</span><span class="chip">Google Cloud</span><span class="chip">Microsoft Azure</span><span class="chip">Azure DevOps</span><span class="chip">Flask</span><span class="chip">Docker</span><span class="chip">Jupyter</span><span class="chip">Linux</span><span class="chip">Git</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="xp.eyebrow">Parcours</p>
+          <h2 data-i18n="xp.h2">Expériences professionnelles</h2>
+          <p data-i18n="xp.sub">Du BI à l'IA appliquée, entre Dakar et Montréal.</p>
+        </div>
+        <div class="xp-list reveal">
+          <a class="xp" href="cv.html#experience">
+            <span class="xp-date" data-i18n="cv.e1.date">Mai 2024 – Présent</span>
+            <span><b data-i18n="cv.e1.role">Analyste – Programmation & Intelligence artificielle</b><span class="xp-org" data-i18n="cv.e1.org">BIRCIS Technologies & Consulting Inc.</span></span>
+            <span class="xp-loc" data-i18n="cv.e1.loc">Montréal, Canada</span>
+          </a>
+          <a class="xp" href="cv.html#experience">
+            <span class="xp-date" data-i18n="cv.e2.date">Sept. 2023 – Août 2025</span>
+            <span><b data-i18n="cv.e2.role">Assistant de recherche – IA & machine learning</b><span class="xp-org" data-i18n="cv.e2.org">CAE Inc. & Laboratoire LARCASE, École de technologie supérieure (ÉTS)</span></span>
+            <span class="xp-loc" data-i18n="cv.e2.loc">Montréal, Canada</span>
+          </a>
+          <a class="xp" href="cv.html#experience">
+            <span class="xp-date" data-i18n="cv.e3.date">Janv. 2023 – Août 2023</span>
+            <span><b data-i18n="cv.e3.role">Assistant Data</b><span class="xp-org" data-i18n="cv.e3.org">ONG ALIMA (The Alliance for International Medical Action)</span></span>
+            <span class="xp-loc" data-i18n="cv.e3.loc">Dakar, Sénégal</span>
+          </a>
+          <a class="xp" href="cv.html#experience">
+            <span class="xp-date" data-i18n="cv.e4.date">Déc. 2022 – Fév. 2023</span>
+            <span><b data-i18n="cv.e4.role">Apprenant Data Engineering</b><span class="xp-org" data-i18n="cv.e4.org">Ecofarm Data Engineering</span></span>
+            <span class="xp-loc" data-i18n="cv.e4.loc">Fatick, Sénégal</span>
+          </a>
+          <a class="xp" href="cv.html#experience">
+            <span class="xp-date" data-i18n="cv.e5.date">Juin 2022 – Oct. 2022</span>
+            <span><b data-i18n="cv.e5.role">Data Scientist junior</b><span class="xp-org" data-i18n="cv.e5.org">Welfin S.A.R.L.</span></span>
+            <span class="xp-loc" data-i18n="cv.e5.loc">Dakar, Sénégal</span>
+          </a>
+          <a class="xp" href="cv.html#experience">
+            <span class="xp-date" data-i18n="cv.e6.date">Juin 2022 – Déc. 2022</span>
+            <span><b data-i18n="cv.e6.role">Stagiaire – Business Intelligence</b><span class="xp-org" data-i18n="cv.e6.org">Expert-IS</span></span>
+            <span class="xp-loc" data-i18n="cv.e6.loc">Dakar, Sénégal</span>
+          </a>
+        </div>
+        <p style="margin-top:var(--s5)"><a class="btn" href="cv.html"><span data-i18n="xp.cta">Voir le CV détaillé</span><span data-icon="arrow"></span></a></p>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section" id="featured">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="feat.eyebrow">Sélection</p>
+          <h2 data-i18n="feat.h2">Des projets à regarder de plus près</h2>
+          <p data-i18n="feat.sub">Du travail de bout en bout : collecte, modélisation et livraison.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card project reveal">
+            <div class="project-top"><span class="chip chip-accent">NLP</span></div>
+            <h3 data-i18n="p.wolof.t">Génération de texte en wolof</h3>
+            <p data-i18n="p.wolof.d">Pipeline NLP complet : scraping de textes wolof, prétraitement, puis modèles LSTM et Transformer sous PyTorch, servis via une interface web Flask.</p>
+            <div class="chips"><span class="chip">PyTorch</span><span class="chip">Transformer</span><span class="chip">Flask</span></div>
+            <div class="project-links"><a class="btn btn-sm" href="https://github.com/Alioune-Cisse/pytorch-wolof-text-generator" target="_blank" rel="noopener" data-icon="github"><span data-i18n="proj.code">Code</span></a></div>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top"><span class="chip chip-amber">ML</span></div>
+            <h3 data-i18n="p.flood.t">Prédiction des inondations à Dakar</h3>
+            <p data-i18n="p.flood.d">Prédiction des inondations de Dakar à partir de données météo, de l'historique extrait des images satellites Sentinel-1 et d'un RandomForest, déployé avec Flask. Projet en cours avec d'anciens camarades.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">RandomForest</span><span class="chip">Sentinel-1</span></div>
+            <div class="project-links"><a class="btn btn-sm" href="https://youtu.be/dHzBLipXeIM" target="_blank" rel="noopener" data-icon="play"><span data-i18n="proj.video">Démo vidéo</span></a></div>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top"><span class="chip chip-teal">Data viz</span></div>
+            <h3 data-i18n="p.malaria.t">Paludisme en CEDEAO, 2000–2017</h3>
+            <p data-i18n="p.malaria.d">Visualisations interactives D3.js sur des données réelles des Nations unies couvrant l'espace CEDEAO pendant 17 ans. À consulter sur ordinateur.</p>
+            <div class="chips"><span class="chip">D3.js</span><span class="chip">JavaScript</span></div>
+            <div class="project-links"><a class="btn btn-sm" href="https://ecowas-malaria.github.io" target="_blank" rel="noopener" data-icon="external"><span data-i18n="proj.live">Site en ligne</span></a></div>
+          </article>
+        </div>
+        <p style="margin-top:var(--s5)"><a class="btn" href="portfolio.html"><span data-i18n="feat.all">Tous les projets</span><span data-icon="arrow"></span></a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.h2">Parlons-nous</h2>
+          <p data-i18n="contact.sub">Ouvert aux postes de data scientist et de machine learning engineer. Le plus rapide pour me joindre : l'email.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-list reveal">
+            <a href="mailto:cissealioune.sn@gmail.com" data-icon="mail"><span>cissealioune.sn@gmail.com</span></a>
+            <a href="tel:+15144973817" data-icon="phone"><span>+1 (514) 497-3817</span></a>
+            <a href="https://www.linkedin.com/in/alioune-cisse-a811a416b/" target="_blank" rel="noopener" data-icon="linkedin"><span>LinkedIn</span></a>
+            <a href="https://github.com/Alioune-Cisse/" target="_blank" rel="noopener" data-icon="github"><span>GitHub</span></a>
+          </div>
+          <form class="card form reveal" id="contact-form" novalidate>
+            <div class="field"><label for="f-name" data-i18n="form.name">Nom</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-email" data-i18n="form.email">Votre email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-subject" data-i18n="form.subject">Objet</label><input id="f-subject" name="subject" type="text" required></div>
+            <div class="field"><label for="f-message" data-i18n="form.message">Message</label><textarea id="f-message" name="message" required></textarea></div>
+            <p id="form-error" role="alert" hidden style="color:var(--amber);font-weight:500;margin:0" data-i18n="form.err">Merci de remplir tous les champs avec un email valide.</p>
+            <div><button class="btn btn-primary" type="submit" data-icon="send"><span data-i18n="form.send">Envoyer le message</span></button></div>
+            <p class="form-note" data-i18n="form.note">Ceci ouvre votre application email avec le message pré-rempli. Rien n'est stocké sur ce site.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span data-i18n="footer.copy">© 2026 Alioune Cissé. Fait main : HTML, CSS, JS natif.</span>
+      <span class="socials">
+        <a class="btn-icon" href="https://github.com/Alioune-Cisse/" target="_blank" rel="noopener" aria-label="GitHub" data-icon="github"></a>
+        <a class="btn-icon" href="https://www.linkedin.com/in/alioune-cisse-a811a416b/" target="_blank" rel="noopener" aria-label="LinkedIn" data-icon="linkedin"></a>
+        <a class="btn-icon" href="mailto:cissealioune.sn@gmail.com" aria-label="Email" data-icon="mail"></a>
+      </span>
     </div>
-    <p class="w3-wide">Data Analysis</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:87%"></div>
-    </div>
-  <p class="w3-wide">Data Visualization</p>
-  <div class="w3-white">
-    <div class="w3-dark-grey" style="height:28px;width:87%"></div>
-  </div>
-  <p class="w3-wide">Deep Learning</p>
-  <div class="w3-white">
-    <div class="w3-dark-grey" style="height:28px;width:75%"></div>
-  </div>
-  <p class="w3-wide">Camputer Vision</p>
-  <div class="w3-white">
-    <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-  </div>
-  <p class="w3-wide">Natural Language Processing</p>
-  <div class="w3-white">
-    <div class="w3-dark-grey" style="height:28px;width:55%"></div>
-  </div><br>
-  </section>
+  </footer>
 
-  
-  
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contactme">
-    <h2 class="w3-text-light-grey">Contactez moi</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.1321592700215!2d-73.6302120237203!3d45.56778087107589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91f2bffb15dd1%3A0x9a38a92d59492765!2s8911%20Av.%202e%2C%20Montr%C3%A9al%2C%20QC%20H1Z%202S7!5e0!3m2!1sfr!2sca!4v1696530783716!5m2!1sfr!2sca" width="600" height="450" style="border:0; float: right; height: 250px;" allowfullscreen="" loading="lazy"></iframe>
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 8911 Av. 2e, Montréal, QC H1Z 2S7</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="tel:+15144973817">Téléphone: +1(514)497-3817</a></p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="mailto:cissealioune.sn@gmail.com">mail : cisse.sn@gmail.com</a></p>
-      <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="https://github.com/Alioune-Cisse/">https://github.com/Alioune-Cisse/</a></p>
-      <p><i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="https://www.facebook.com/aliou.cisse.121/">https://www.facebook.com/aliou.cisse.121/</a></p>
-      <p><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="https://www.linkedin.com/in/alioune-cisse-a811a416b/">https://www.linkedin.com/in/alioune-cisse-a811a416b/</a></p>
-    </div><br><br>
-    <p>Entrons en contact. Envoyez-moi un message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nom" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Objet" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVOYER MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-<!-- END PAGE CONTENT -->
-</div>
-
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

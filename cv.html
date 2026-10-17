@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.cv">CV — Alioune Cissé</title>
+  <meta name="description" content="CV d'Alioune Cissé, data scientist et data engineer : expérience, formation, compétences et certifications.">
+  <meta name="theme-color" content="#f6f7f9">
+  <script>
+    (function () {
+      var t = null; try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHPZN4WTHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WHPZN4WTHK');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Alioune Cissé">
+        <span class="brand-mark" aria-hidden="true">AC</span>
+        <span class="brand-name">Alioune Cissé</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.main">
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Accueil</a>
+          <a href="portfolio.html" data-i18n="nav.projects">Projets</a>
+          <a href="cv.html" aria-current="page" data-i18n="nav.cv">CV</a>
+          <a href="blogs.html" data-i18n="nav.blog">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="seg" role="group" aria-label="Langue" data-i18n-attr="aria-label:ui.lang">
+          <button type="button" data-lang="fr" aria-pressed="true" lang="fr">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+        </div>
+        <button type="button" class="btn-icon theme-toggle" aria-label="Basculer entre thème clair et sombre" data-i18n-attr="aria-label:ui.theme"></button>
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu" data-i18n-attr="aria-label:nav.menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"></svg></button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="portfolio.html" data-i18n="nav.projects">Projets</a>
+      <a href="cv.html" aria-current="page" data-i18n="nav.cv">CV</a>
+      <a href="blogs.html" data-i18n="nav.blog">Blog</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap cv-layout">
+      <aside class="cv-toc no-print" aria-label="Sommaire">
+        <a href="#summary" data-i18n="cv.toc.summary">Résumé</a>
+        <a href="#experience" data-i18n="cv.toc.exp">Expérience</a>
+        <a href="#education" data-i18n="cv.toc.edu">Formation</a>
+        <a href="#skills" data-i18n="cv.toc.skills">Compétences</a>
+        <a href="#certs" data-i18n="cv.toc.certs">Certifications</a>
+        <a href="#projects" data-i18n="cv.toc.proj">Projets</a>
+        <button type="button" class="btn btn-sm" data-print data-icon="printer"><span data-i18n="cv.print">Imprimer / PDF</span></button>
+      </aside>
+
+      <div class="cv-sheet">
+        <header class="cv-head">
+          <div class="row">
+            <img src="me/alioune_profile.png" width="88" height="88" alt="" style="border-radius:var(--r-lg);border:1px solid var(--border);object-fit:cover">
+            <div>
+              <h1 data-i18n="cv.h1">Alioune Cissé</h1>
+              <p class="role" data-i18n="cv.role">Data Scientist · Data Engineer</p>
+              <p style="margin:0;color:var(--muted);font-size:.95rem" data-i18n="cv.cert">Databricks Certified Associate Developer for Apache Spark 3.0</p>
+            </div>
+          </div>
+          <div class="cv-contact">
+            <a href="mailto:cissealioune.sn@gmail.com" data-icon="mail"><span>cissealioune.sn@gmail.com</span></a>
+            <a href="tel:+15144973817" data-icon="phone"><span>+1 (514) 497-3817</span></a>
+            <span data-icon="pin"><span>Montréal, QC</span></span>
+            <a href="https://www.linkedin.com/in/alioune-cisse-a811a416b/" target="_blank" rel="noopener" data-icon="linkedin"><span>LinkedIn</span></a>
+            <a href="https://github.com/Alioune-Cisse/" target="_blank" rel="noopener" data-icon="github"><span>GitHub</span></a>
+          </div>
+        </header>
+
+        <section class="cv-sec" id="summary">
+          <h2 data-i18n="cv.summary.h">Résumé</h2>
+          <p style="margin:0" data-i18n="cv.summary.p">Data scientist et data engineer avec deux années d'expérience concrète sur des projets data : ETL et entrepôts de données, tableaux de bord BI, machine learning et NLP. Sens de la communication et du leadership, et habitude de m'adapter vite dans un domaine en constante évolution. Je cherche une équipe où mettre ce savoir-faire en pratique et continuer à progresser.</p>
+        </section>
+
+        <section class="cv-sec" id="experience">
+          <h2 data-i18n="cv.exp.h">Expérience</h2>
+          <div class="timeline">
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.e1.date">Mai 2024 – Présent</b><span data-i18n="cv.e1.loc">Montréal, Canada</span></div>
+            <div>
+              <h3 data-i18n="cv.e1.role">Analyste – Programmation & Intelligence artificielle</h3>
+              <p class="org" data-i18n="cv.e1.org">BIRCIS Technologies & Consulting Inc.</p>
+              <ul><li data-i18n="cv.e1.l1">Déployer et maintenir une application cloud sur Microsoft Azure, avec gestion de la sécurité des données et des contrôles d'accès.</li><li data-i18n="cv.e1.l2">Intégrer des modèles d'IA dans les workflows opérationnels pour automatiser les processus et faciliter les évolutions du système.</li><li data-i18n="cv.e1.l3">Diagnostiquer et corriger des défauts du code existant, avec des améliorations continues des performances applicatives.</li><li data-i18n="cv.e1.l4">Collaborer avec les équipes techniques pour définir la feuille de route du système et sa documentation.</li></ul>
+              <p class="stack-label" data-i18n="cv.stack">Outils</p>
+              <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">Azure DevOps</span><span class="chip">Python</span><span class="chip">IA générative</span><span class="chip">Git</span></div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.e2.date">Sept. 2023 – Août 2025</b><span data-i18n="cv.e2.loc">Montréal, Canada</span></div>
+            <div>
+              <h3 data-i18n="cv.e2.role">Assistant de recherche – IA & machine learning</h3>
+              <p class="org" data-i18n="cv.e2.org">CAE Inc. & Laboratoire LARCASE, École de technologie supérieure (ÉTS)</p>
+              <ul><li data-i18n="cv.e2.l1">Concevoir et entraîner un modèle d'IA pour l'identification automatique des segments de trim d'un aéronef, en partenariat direct avec CAE.</li><li data-i18n="cv.e2.l2">Nettoyer et analyser de gros volumes de données de simulation de vol : nettoyage, feature engineering, modélisation ML/DL.</li><li data-i18n="cv.e2.l3">Réaliser un mémoire de maîtrise à l'intersection de l'IA et de la simulation, avec la mention Excellent.</li><li data-i18n="cv.e2.l4">Présenter les résultats à un jury d'experts ÉTS–CAE, qui a validé les approches IA proposées.</li><li data-i18n="cv.e2.l5">Travailler dans un environnement de recherche multidisciplinaire en lien avec l'industrie.</li></ul>
+              <p class="stack-label" data-i18n="cv.stack">Outils</p>
+              <div class="chips"><span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">scikit-learn</span><span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">Git</span></div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.e3.date">Janv. 2023 – Août 2023</b><span data-i18n="cv.e3.loc">Dakar, Sénégal</span></div>
+            <div>
+              <h3 data-i18n="cv.e3.role">Assistant Data</h3>
+              <p class="org" data-i18n="cv.e3.org">ONG ALIMA (The Alliance for International Medical Action)</p>
+              <ul><li data-i18n="cv.e3.l1">Automatiser de nouveaux formats de reporting et améliorer les tableaux de bord Power BI de suivi des cohortes marketing.</li><li data-i18n="cv.e3.l2">Optimiser la segmentation des donateurs (50 000+ contacts) par des analyses statistiques pour renforcer l'efficacité des campagnes.</li><li data-i18n="cv.e3.l3">Superviser la mise à jour de la base CRM et maintenir la documentation, le dictionnaire de données et les procédures.</li></ul>
+              <p class="stack-label" data-i18n="cv.stack">Outils</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Google Cloud</span><span class="chip">BigQuery</span><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Excel</span><span class="chip">Odoo</span></div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.e4.date">Déc. 2022 – Fév. 2023</b><span data-i18n="cv.e4.loc">Fatick, Sénégal</span></div>
+            <div>
+              <h3 data-i18n="cv.e4.role">Apprenant Data Engineering</h3>
+              <p class="org" data-i18n="cv.e4.org">Ecofarm Data Engineering</p>
+              <ul><li data-i18n="cv.e4.l1">Travail sur des cas réels de grandes entreprises sénégalaises, encadré par des experts d'AWS, Azure, Orange, Atos et Meta.</li><li data-i18n="cv.e4.l2">Chaîne complète : collecte, prétraitement, vérification de la qualité, visualisation et prédiction.</li><li data-i18n="cv.e4.l3">Conception d'une architecture big data pour le traitement quotidien des données d'une entreprise télécom.</li></ul>
+              <p class="stack-label" data-i18n="cv.stack">Outils</p>
+              <div class="chips"><span class="chip">Python</span><span class="chip">Spark</span><span class="chip">SQL</span><span class="chip">Hive</span><span class="chip">Neo4j</span><span class="chip">PostgreSQL</span><span class="chip">Hadoop</span></div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.e5.date">Juin 2022 – Oct. 2022</b><span data-i18n="cv.e5.loc">Dakar, Sénégal</span></div>
+            <div>
+              <h3 data-i18n="cv.e5.role">Data Scientist junior</h3>
+              <p class="org" data-i18n="cv.e5.org">Welfin S.A.R.L.</p>
+              <ul><li data-i18n="cv.e5.l1">Création d'un modèle d'IA qui optimise les dépenses d'une cérémonie selon le budget et les priorités de l'utilisateur.</li><li data-i18n="cv.e5.l2">Déploiement du modèle sous forme d'API, puis maintenance et mise à jour.</li></ul>
+              <p class="stack-label" data-i18n="cv.stack">Outils</p>
+              <div class="chips"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Kedro</span></div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.e6.date">Juin 2022 – Déc. 2022</b><span data-i18n="cv.e6.loc">Dakar, Sénégal</span></div>
+            <div>
+              <h3 data-i18n="cv.e6.role">Stagiaire – Business Intelligence</h3>
+              <p class="org" data-i18n="cv.e6.org">Expert-IS</p>
+              <ul><li data-i18n="cv.e6.l1">Concevoir et déployer un entrepôt de données de bout en bout, en garantissant fiabilité et performance.</li><li data-i18n="cv.e6.l2">Développer des tableaux de bord Power BI interactifs et mettre en œuvre des pipelines ETL avec Talend.</li><li data-i18n="cv.e6.l3">Administrer une base PostgreSQL pour le stockage, l'optimisation et l'analyse des données de l'entreprise.</li></ul>
+              <p class="stack-label" data-i18n="cv.stack">Outils</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Talend</span><span class="chip">PostgreSQL</span><span class="chip">Microsoft Azure</span></div>
+            </div>
+          </article>
+          </div>
+        </section>
+
+        <section class="cv-sec" id="education">
+          <h2 data-i18n="cv.edu.h">Formation</h2>
+          <div class="timeline">
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.d1.date">Sept. 2023 – Août 2025</b><span data-i18n="cv.d1.loc">Montréal, Canada</span></div>
+            <div><h3 data-i18n="cv.d1.t">Maîtrise recherche, IA appliquée (mention Excellent)</h3><p class="org" style="margin:0" data-i18n="cv.d1.o">École de technologie supérieure (ÉTS) · programme en aérospatiale · tableau d'honneur 2025</p></div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.d2.date">Déc. 2019 – Août 2021</b><span data-i18n="cv.d2.loc">Thiès, Sénégal</span></div>
+            <div><h3 data-i18n="cv.d2.t">Master en sciences des données et applications</h3><p class="org" style="margin:0" data-i18n="cv.d2.o">Université Iba Der Thiam de Thiès (UIDTT) · option IA et ingénierie des données</p></div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.d3.date">Janv. 2017 – Août 2019</b><span data-i18n="cv.d3.loc">Thiès, Sénégal</span></div>
+            <div><h3 data-i18n="cv.d3.t">Licence en informatique et gestion</h3><p class="org" style="margin:0" data-i18n="cv.d3.o">Université Iba Der Thiam de Thiès (UIDTT)</p></div>
+          </article>
+          <article class="entry">
+            <div class="when"><b data-i18n="cv.d4.date">2016</b><span data-i18n="cv.d4.loc">Dakar, Sénégal</span></div>
+            <div><h3 data-i18n="cv.d4.t">Baccalauréat scientifique</h3><p class="org" style="margin:0" data-i18n="cv.d4.o">Lycée Keur Massar Zone de Recasement</p></div>
+          </article>
+          </div>
+        </section>
+
+        <section class="cv-sec" id="skills">
+          <h2 data-i18n="cv.skills.h">Compétences</h2>
+          <div class="grid grid-2">
+          <article class="card skill-card">
+            <h3 data-i18n="skills.g1">Machine learning &amp; IA</h3>
+            <div class="chips"><span class="chip chip-accent">Machine Learning</span><span class="chip chip-accent">Deep Learning</span><span class="chip chip-accent">NLP</span><span class="chip chip-accent">Computer Vision</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">scikit-learn</span><span class="chip">IA générative</span><span class="chip">Random Forest</span><span class="chip">Transformers</span><span class="chip">LSTM</span></div>
+          </article>
+          <article class="card skill-card">
+            <h3 data-i18n="skills.g2">Data engineering</h3>
+            <div class="chips"><span class="chip chip-teal">Apache Spark</span><span class="chip chip-teal">Databricks</span><span class="chip chip-teal">Kafka</span><span class="chip chip-teal">Apache NiFi</span><span class="chip">Hadoop / HDFS</span><span class="chip">Hive</span><span class="chip">Talend</span><span class="chip">ETL</span><span class="chip">Data warehouse</span></div>
+          </article>
+          <article class="card skill-card">
+            <h3 data-i18n="skills.g3">Langages &amp; bases de données</h3>
+            <div class="chips"><span class="chip chip-amber">Python</span><span class="chip chip-amber">SQL</span><span class="chip">R</span><span class="chip">Scala</span><span class="chip">JavaScript</span><span class="chip">PostgreSQL</span><span class="chip">NoSQL</span><span class="chip">Neo4j</span></div>
+          </article>
+          <article class="card skill-card">
+            <h3 data-i18n="skills.g4">BI, cloud &amp; outils</h3>
+            <div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">D3.js</span><span class="chip">Google BigQuery</span><span class="chip">Google Cloud</span><span class="chip">Microsoft Azure</span><span class="chip">Azure DevOps</span><span class="chip">Flask</span><span class="chip">Docker</span><span class="chip">Jupyter</span><span class="chip">Linux</span><span class="chip">Git</span></div>
+          </article>
+        </div>
+        </section>
+
+        <section class="cv-sec" id="certs">
+          <h2 data-i18n="cv.certs.h">Certifications</h2>
+          <div class="grid grid-2">
+            <div class="card"><ul class="cert-list"><li data-icon="award"><div><b data-i18n="cv.c0.o">Tableau d'honneur ÉTS (2025)</b><span data-i18n="cv.c0">Mention Excellent sur le mémoire de maîtrise</span></div></li><li data-icon="award"><div><b data-i18n="cv.c1.o">Databricks (fév. 2023)</b><span data-i18n="cv.c1">Certified Associate Developer for Apache Spark 3.0</span></div></li><li data-icon="award"><div><b data-i18n="cv.c5.o">Udemy (janv. 2023)</b><span data-i18n="cv.c5">Azure Databricks & Spark Core for Data Engineers (Python/SQL)</span></div></li><li data-icon="award"><div><b data-i18n="cv.c2.o">LinkedIn Learning</b><span data-i18n="cv.c2">Machine Learning : traitement du langage naturel avec Python</span></div></li><li data-icon="award"><div><b data-i18n="cv.c3.o">IBM</b><span data-i18n="cv.c3">Big Data 101</span></div></li><li data-icon="award"><div><b data-i18n="cv.c4.o">Udemy</b><span data-i18n="cv.c4">Apache NiFi de A à Z : le guide complet</span></div></li></ul></div>
+            <div class="card">
+              <h3 style="font-size:1rem" data-i18n="cv.lang.h">Langues</h3>
+              <ul class="lang-list">
+                <li><span data-i18n="cv.lang.fr">Français</span><span class="lvl" data-i18n="cv.lvl.fr">C2 (TEF)</span></li>
+                <li><span data-i18n="cv.lang.en">Anglais</span><span class="lvl" data-i18n="cv.lvl.pro">Professionnel</span></li>
+                <li><span data-i18n="cv.lang.wo">Wolof</span><span class="lvl" data-i18n="cv.lvl.native">Langue maternelle</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-sec" id="projects">
+          <h2 data-i18n="cv.proj.h">Projets sélectionnés</h2>
+          <div class="grid grid-2">
+            <article class="card project"><h3 data-i18n="p.wolof.t">Génération de texte en wolof</h3><p data-i18n="p.wolof.d">Pipeline NLP complet : scraping de textes wolof, prétraitement, puis modèles LSTM et Transformer sous PyTorch, servis via une interface web Flask.</p></article>
+            <article class="card project"><h3 data-i18n="p.flood.t">Prédiction des inondations à Dakar</h3><p data-i18n="p.flood.d">Prédiction des inondations de Dakar à partir de données météo, de l'historique extrait des images satellites Sentinel-1 et d'un RandomForest, déployé avec Flask. Projet en cours avec d'anciens camarades.</p></article>
+            <article class="card project"><h3 data-i18n="p.public.t">Annuaire d'APIs publiques</h3><p data-i18n="p.public.d">Plateforme web Flask qui regroupe et catégorise plus de 1 500 APIs publiques pour faciliter la recherche.</p></article>
+            <article class="card project"><h3 data-i18n="p.malaria.t">Paludisme en CEDEAO, 2000–2017</h3><p data-i18n="p.malaria.d">Visualisations interactives D3.js sur des données réelles des Nations unies couvrant l'espace CEDEAO pendant 17 ans. À consulter sur ordinateur.</p></article>
+          </div>
+          <p class="no-print" style="margin:var(--s4) 0 0"><a class="btn btn-sm" href="portfolio.html"><span data-i18n="cv.proj.all">Voir tous les projets</span><span data-icon="arrow"></span></a></p>
+        </section>
+
+        <section class="cv-sec">
+          <h2 data-i18n="cv.int.h">Centres d'intérêt</h2>
+          <p style="margin:0;color:var(--muted)" data-i18n="cv.int.p">Football et randonnée, scrabble et échecs, mangas et animes, bénévolat dans l'association Human AI.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span data-i18n="footer.copy">© 2026 Alioune Cissé. Fait main : HTML, CSS, JS natif.</span>
+      <span class="socials">
+        <a class="btn-icon" href="https://github.com/Alioune-Cisse/" target="_blank" rel="noopener" aria-label="GitHub" data-icon="github"></a>
+        <a class="btn-icon" href="https://www.linkedin.com/in/alioune-cisse-a811a416b/" target="_blank" rel="noopener" aria-label="LinkedIn" data-icon="linkedin"></a>
+        <a class="btn-icon" href="mailto:cissealioune.sn@gmail.com" aria-label="Email" data-icon="mail"></a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
